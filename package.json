@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "webpack": "^4.29.2",
+    "webpack-cli": "^3.2.3"
+  },
+  "name": "md-awesome",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack"
+  }
+}
