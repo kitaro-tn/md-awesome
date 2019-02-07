@@ -1,5 +1,7 @@
 {
   "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
     "webpack": "^4.29.2",
     "webpack-cli": "^3.2.3"
   },
@@ -8,6 +10,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "webpack"
+    "build": "webpack",
+    "test": "mocha test"
   }
 }
