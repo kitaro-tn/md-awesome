@@ -1,13 +1,12 @@
-'use strict';
-
 /**
- * MdAwesome
+ * Md-Awesome module
+ * @author Tatsunori Nishikori<tora.1986.tatsu@gmail.com>
  * @description MdAwesome is markdown text editor
- * @author tatsunori nishikori
- * @
- */
+ **/
+
 class MdAwesome {
-  constructor(){
+
+  constructor() {
     console.log('constructor');
   }
 
@@ -17,3 +16,5 @@ class MdAwesome {
   // clear
   // convert
 }
+
+export { MdAwesome };

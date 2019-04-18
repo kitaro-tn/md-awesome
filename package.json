@@ -2,7 +2,9 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "webpack": "^4.29.2",
+    "ts-loader": "^5.3.3",
+    "typescript": "^3.4.3",
+    "webpack": "^4.30.0",
     "webpack-cli": "^3.2.3"
   },
   "name": "md-awesome",
