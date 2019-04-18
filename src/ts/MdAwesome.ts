@@ -4,7 +4,7 @@
  * @description MdAwesome is markdown text editor
  **/
 
-class MdAwesome {
+export class MdAwesome {
 
   constructor() {
     console.log('constructor');
@@ -16,5 +16,3 @@ class MdAwesome {
   // clear
   // convert
 }
-
-export { MdAwesome };
