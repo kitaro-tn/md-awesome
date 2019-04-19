@@ -4,6 +4,7 @@
     "mocha": "^5.2.0",
     "ts-loader": "^5.3.3",
     "ts-node": "^8.1.0",
+    "typedoc": "^0.14.2",
     "typescript": "^3.4.3",
     "webpack": "^4.30.0",
     "webpack-cli": "^3.2.3"
@@ -14,7 +15,8 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "test": "mocha --require ts-node/register test/**/*.ts"
+    "test": "mocha --require ts-node/register test/**/*.ts",
+    "doc": "typedoc --out docs src/ts/"
   },
   "dependencies": {
     "@types/chai": "^4.1.7",
