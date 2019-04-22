@@ -1,21 +1,21 @@
-import { describe, it, beforeEach } from "mocha";
 import { expect } from "chai";
+import { beforeEach, describe, it } from "mocha";
 import {
-  HeadingSyntax,
-  LineBreakSyntax,
-  BoldSyntax,
-  ItalicSyntax,
-  BoldAndItalicSyntax,
   BlockquoteSyntax,
-  UnorderedListSyntax,
-  OrderedListSyntax,
+  BoldAndItalicSyntax,
+  BoldSyntax,
   CodeSyntax,
+  HeadingSyntax,
+  ImageSyntax,
+  ItalicSyntax,
+  LineBreakSyntax,
   LinkSyntax,
-  ImageSyntax
-} from "../src/ts/MarkdownSyntax";
+  OrderedListSyntax,
+  UnorderedListSyntax,
+} from "../src/ts/markdownSyntax";
 
 describe("MarkdownSyntax", () => {
-  var markdownClass, subject;
+  let markdownClass, subject;
 
   beforeEach(() => {
     console.log(markdownClass);
@@ -29,9 +29,7 @@ describe("MarkdownSyntax", () => {
         markdownClass = new HeadingSyntax(level);
       });
       it("should return markdown syntax", () => {
-        markdownClass = new HeadingSyntax(level);
-        console.log('aaaa');
-        console.log(HeadingSyntax);
+        markdownClass = new HeadingSyntax("h1");
         expect(markdownClass.append()).to.equal("#");
       });
     });
