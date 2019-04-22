@@ -28,7 +28,7 @@ export class HeadingSyntax implements MarkdownSyntax {
   }
 
   public append(): string {
-    let headingNumber: number = parseInt(this.headingLevel[1]);
+    let headingNumber: number = parseInt(this.headingLevel[1], 10);
     return "#".repeat(headingNumber) + " " + this.enteredText;
   }
 
@@ -109,7 +109,7 @@ export class BlockquoteSyntax implements MarkdownSyntax {
   }
 
   public append(): string {
-    return this.enteredText.split("\n").map(text =>  "> " + text).join("\n");
+    return this.enteredText.split("\n").map((text) =>  "> " + text).join("\n");
   }
 }
 
@@ -124,7 +124,7 @@ export class UnorderedListSyntax implements MarkdownSyntax {
   }
 
   public append(): string {
-    return this.enteredText.split("\n").map(text =>  "- " + text).join("\n");
+    return this.enteredText.split("\n").map((text) =>  "- " + text).join("\n");
   }
 }
 
