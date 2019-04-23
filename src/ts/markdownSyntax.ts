@@ -79,7 +79,7 @@ export class ItalicSyntax implements MarkdownSyntax {
   }
 
   public append(): string {
-    return "*" + this.enteredText + "*";
+    return "_" + this.enteredText + "_";
   }
 }
 
@@ -154,7 +154,12 @@ export class CodeSyntax implements MarkdownSyntax {
   }
 
   public append(): string {
-    return "```" + this.codeFormat + "\n" + this.enteredText + "\n```";
+    if (this.codeFormat == null) {
+      return "```"  + "\n" + this.enteredText + "\n```";
+    } else {
+
+      return "```" + this.codeFormat + "\n" + this.enteredText + "\n```";
+    }
   }
 }
 
@@ -189,9 +194,9 @@ export class ImageSyntax implements MarkdownSyntax {
 
   public append(): string {
     if (this.title === null) {
-      return `[!${this.enteredText}!](${this.url})`;
+      return `![${this.enteredText}](${this.url})`;
       } else {
-      return `[!${this.enteredText}!](${this.url}) "${this.title}"`;
+      return `![${this.enteredText}](${this.url}) "${this.title}"`;
     }
   }
 }

@@ -4,6 +4,20 @@
  * @description MdAwesome is markdown text editor
  */
 
+import {
+  BlockquoteSyntax,
+  BoldAndItalicSyntax,
+  BoldSyntax,
+  CodeSyntax,
+  HeadingSyntax,
+  ImageSyntax,
+  ItalicSyntax,
+  LineBreakSyntax,
+  LinkSyntax,
+  OrderedListSyntax,
+  UnorderedListSyntax,
+} from "./markdownSyntax";
+
 export class MdAwesome {
 
   constructor() {
