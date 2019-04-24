@@ -1,6 +1,6 @@
-import { describe, it } from "mocha";
 import { expect } from "chai";
-import * as MdAwesome from "../src/ts/MdAwesome";
+import { describe, it } from "mocha";
+import * as MdAwesome from "../src/ts/mdAwesome";
 
 describe("MdAwesome", () => {
   it("shouuld be ok", () => {

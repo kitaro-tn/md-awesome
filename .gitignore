@@ -3,6 +3,9 @@
 *.swo
 .DS_Store
 
+docs/*
+!*.gitkeep
+
 # Created by https://www.gitignore.io/api/node
 # Edit at https://www.gitignore.io/?templates=node
 

@@ -1,0 +1,16 @@
+{
+  "extension": [
+    ".ts",
+    ".tsx"
+  ],
+  "exclude": [
+    "dist/**/*.js",
+    "docs/**/*.js",
+    "config/**/*.js"
+  ],
+  "reporter": [
+    "html",
+    "text-summary"
+  ],
+  "all": true
+}
