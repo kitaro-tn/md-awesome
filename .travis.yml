@@ -4,6 +4,7 @@ node_js:
   - "stable"
   - "lts/*"
 script:
+  - npm install codecov -g
   - yarn run coverage-ci
 after_success:
   - codecov -f coverage/*.json
