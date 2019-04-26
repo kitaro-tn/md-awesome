@@ -1,6 +1,7 @@
 # md-awesome
 
 [![Build Status](https://travis-ci.org/kitaro-tn/md-awesome.svg?branch=master)](https://travis-ci.org/kitaro-tn/md-awesome)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org/)
 
 Simple markdown editor
 

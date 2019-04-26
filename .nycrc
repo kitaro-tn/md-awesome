@@ -6,7 +6,9 @@
   "exclude": [
     "dist/**/*.js",
     "docs/**/*.js",
-    "config/**/*.js"
+    "coverage/**/*.js",
+    "config/**/*.js",
+    "webpack.config.js"
   ],
   "reporter": [
     "html",
