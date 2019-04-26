@@ -1,4 +1,5 @@
 {
+  "private": true,
   "devDependencies": {
     "@types/chai": "^4.1.7",
     "@types/mocha": "^5.2.6",
@@ -16,15 +17,13 @@
     "webpack-cli": "^3.2.3"
   },
   "name": "md-awesome",
-  "version": "1.0.0",
-  "main": "index.js",
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "test": "nyc mocha",
-    "coverage": "test & nyc report --reporter=html",
-    "doc": "typedoc --out docs src/ts/",
-    "lint": "tslint -c tslint.json src/**/*.ts test/**/*.ts"
+    "test": "nyc mocha --opts mocha.opts",
+    "coverage": "npm run test && nyc report --reporter=html",
+    "doc": "typedoc --out docs packages/**/src/ts/",
+    "lint": "tslint -c tslint.json  packages/**/src/**/*.ts  packages/**/test/**/*.ts"
   },
   "dependencies": {}
 }
