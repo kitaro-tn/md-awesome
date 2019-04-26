@@ -6,5 +6,16 @@ node_js:
 script:
   - npm install codecov -g
   - yarn run coverage-ci
+  - yarn run doc
 after_success:
   - codecov -f coverage/*.json
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: docs
+  target_branch: gh_pages
+  keep_history: true
+  on:
+    branch: master
