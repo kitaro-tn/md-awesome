@@ -5,6 +5,7 @@
     "@types/mocha": "^5.2.6",
     "chai": "^4.2.0",
     "cross-env": "^5.2.0",
+    "lerna": "^3.13.4",
     "mocha": "^5.2.0",
     "nyc": "^14.0.0",
     "source-map-support": "^0.5.12",
@@ -24,6 +25,5 @@
     "coverage": "npm run test && nyc report --reporter=html",
     "doc": "typedoc --out docs packages/**/src/ts/",
     "lint": "tslint -c tslint.json  packages/**/src/**/*.ts  packages/**/test/**/*.ts"
-  },
-  "dependencies": {}
+  }
 }
