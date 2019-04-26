@@ -23,6 +23,7 @@
     "build": "webpack",
     "test": "nyc mocha --opts mocha.opts",
     "coverage": "npm run test && nyc report --reporter=html",
+    "coverage-ci": "npm run test && nyc report --reporter=json",
     "doc": "typedoc --out docs packages/**/src/ts/",
     "lint": "tslint -c tslint.json  packages/**/src/**/*.ts  packages/**/test/**/*.ts"
   }
