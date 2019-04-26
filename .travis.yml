@@ -3,9 +3,7 @@ language: node_js
 node_js:
   - "stable"
   - "lts/*"
-after_install:
-  - npm install codecov -g
-scripts:
+script:
   - yarn run coverage-ci
 after_success:
   - codecov -f coverage/*.json
