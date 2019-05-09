@@ -1,15 +1,26 @@
-# @md-awesome/core
+# `@md-awesome/core`
+
+> TODO: description
 
 ## Install
 
-Using npm:
+- Using npm:
 
 ```
 $ npm install @md-awesome/core
 ```
 
-or using yarn:
+- or using yarn:
 
 ```
 $ yarn add @md-awesome/core
+```
+
+
+## Usage
+
+```
+const core = require('core');
+
+// TODO: DEMONSTRATE API
 ```

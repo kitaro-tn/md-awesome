@@ -92,3 +92,7 @@ typings/
 .dynamodb/
 
 # End of https://www.gitignore.io/api/node
+
+# lerna ignore
+lerna-debug.log
+packages/*/lib
