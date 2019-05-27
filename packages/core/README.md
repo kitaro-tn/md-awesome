@@ -24,3 +24,10 @@ const core = require('core');
 
 // TODO: DEMONSTRATE API
 ```
+
+## Develop
+
+```
+$ npm link @md-awesome/core
+$ npx ts-node example/exampleCore.ts
+```
