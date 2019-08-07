@@ -20,6 +20,7 @@
   "name": "md-awesome",
   "license": "MIT",
   "scripts": {
+    "package:create": "lerna create",
     "build": "webpack",
     "test": "nyc mocha --opts mocha.opts",
     "coverage": "npm run test && nyc report --reporter=html",
