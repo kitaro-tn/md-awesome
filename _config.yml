@@ -1,1 +1,0 @@
-include: ["/assets", "/classes", "/modules", "/interfaces", "**/_*_.html"]
