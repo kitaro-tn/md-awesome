@@ -200,3 +200,35 @@ export class ImageSyntax implements MarkdownSyntax {
     }
   }
 }
+
+export class TableSyntax implements MarkdownSyntax {
+
+  public name: string;
+  public description: string;
+  public enteredText: string;
+  private baseWhiteSpace: string;
+  private baseHeaderLine: string;
+
+  constructor(public rowLength: number = 1,
+              public colLength: number = 1,
+              public repeat: number = 8,
+              public align: number = 0) {
+    if (this.rowLength < 1 || this.colLength < 1) {
+      throw new RangeError("Row and Col is more than 1 required.");
+    }
+    this.baseWhiteSpace = " ".repeat(this.repeat);
+    this.baseHeaderLine = "-".repeat(this.repeat);
+    this.name = "table";
+    this.description = "To create table.";
+  }
+
+  public append(): string {
+    return "";
+  }
+
+  // private buildTable(): {
+  //
+  // }
+
+}
+
